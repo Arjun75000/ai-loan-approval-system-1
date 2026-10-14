@@ -1,0 +1,58 @@
+{
+  "feature_importances": {
+    "Age": 0.091835,
+    "Monthly_Income": 0.038114,
+    "Credit_Score": 0.256469,
+    "Employment_Years": 0.077148,
+    "Loan_Amount": 0.137319,
+    "Loan_Tenure_Months": 0.007722,
+    "Existing_Loans": 0.183193,
+    "Existing_EMI": 0.09343,
+    "Monthly_Expenses": 0.010872,
+    "Previous_Defaults": 0.103897
+  },
+  "sorted_features": [
+    {
+      "feature": "Credit_Score",
+      "importance": 0.256469
+    },
+    {
+      "feature": "Existing_Loans",
+      "importance": 0.183193
+    },
+    {
+      "feature": "Loan_Amount",
+      "importance": 0.137319
+    },
+    {
+      "feature": "Previous_Defaults",
+      "importance": 0.103897
+    },
+    {
+      "feature": "Existing_EMI",
+      "importance": 0.09343
+    },
+    {
+      "feature": "Age",
+      "importance": 0.091835
+    },
+    {
+      "feature": "Employment_Years",
+      "importance": 0.077148
+    },
+    {
+      "feature": "Monthly_Income",
+      "importance": 0.038114
+    },
+    {
+      "feature": "Monthly_Expenses",
+      "importance": 0.010872
+    },
+    {
+      "feature": "Loan_Tenure_Months",
+      "importance": 0.007722
+    }
+  ],
+  "training_timestamp": "2026-10-13T23:36:26.633142",
+  "note": "Feature importance shows how much each feature contributed to the model's decisions. Higher importance does not prove causation."
+}

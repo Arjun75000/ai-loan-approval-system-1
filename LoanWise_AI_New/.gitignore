@@ -1,0 +1,9 @@
+node_modules/
+.env
+ml/model/*.joblib
+ml/reports/*.png
+__pycache__/
+*.pyc
+.DS_Store
+dist/
+build/

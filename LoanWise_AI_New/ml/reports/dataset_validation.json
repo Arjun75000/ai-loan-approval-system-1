@@ -1,0 +1,43 @@
+{
+  "total_rows": 2000,
+  "total_columns": 11,
+  "columns_found": [
+    "Age",
+    "Monthly_Income",
+    "Credit_Score",
+    "Employment_Years",
+    "Loan_Amount",
+    "Loan_Tenure_Months",
+    "Existing_Loans",
+    "Existing_EMI",
+    "Monthly_Expenses",
+    "Previous_Defaults",
+    "Loan_Approved"
+  ],
+  "missing_columns": [],
+  "extra_columns": [],
+  "missing_values": {},
+  "duplicate_rows": 0,
+  "data_types": {
+    "Age": "int64",
+    "Monthly_Income": "int64",
+    "Credit_Score": "int64",
+    "Employment_Years": "int64",
+    "Loan_Amount": "int64",
+    "Loan_Tenure_Months": "int64",
+    "Existing_Loans": "int64",
+    "Existing_EMI": "int64",
+    "Monthly_Expenses": "int64",
+    "Previous_Defaults": "int64",
+    "Loan_Approved": "int64"
+  },
+  "class_distribution": {
+    "0": 1618,
+    "1": 382
+  },
+  "valid": true,
+  "errors": [],
+  "warnings": [],
+  "rows_after_cleaning": 2000,
+  "rows_dropped_missing_target": 0
+}

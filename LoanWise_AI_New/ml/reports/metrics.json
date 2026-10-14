@@ -1,0 +1,69 @@
+{
+  "model_type": "DecisionTreeClassifier",
+  "training_timestamp": "2026-10-13T23:36:26.633142",
+  "random_seed": 42,
+  "dataset_size": 2000,
+  "train_size": 1600,
+  "test_size": 400,
+  "class_distribution": {
+    "total": {
+      "0": 1618,
+      "1": 382
+    },
+    "train": {
+      "0": 1294,
+      "1": 306
+    },
+    "test": {
+      "0": 324,
+      "1": 76
+    }
+  },
+  "best_parameters": {
+    "class_weight": "balanced",
+    "criterion": "entropy",
+    "max_depth": "7",
+    "min_samples_leaf": "10",
+    "min_samples_split": "2"
+  },
+  "test_metrics": {
+    "accuracy": 0.6875,
+    "precision": 0.3478,
+    "recall": 0.7368,
+    "f1_score": 0.4726,
+    "roc_auc": 0.7621,
+    "confusion_matrix": [
+      [
+        219,
+        105
+      ],
+      [
+        20,
+        56
+      ]
+    ]
+  },
+  "cross_validation": {
+    "n_folds": 5,
+    "mean_f1": 0.4276,
+    "std_f1": 0.0206,
+    "fold_scores": [
+      0.4149,
+      0.4677,
+      0.4135,
+      0.4271,
+      0.4149
+    ]
+  },
+  "baseline_comparison": {
+    "baseline_strategy": "most_frequent",
+    "baseline_accuracy": 0.81,
+    "baseline_f1": 0.0,
+    "model_accuracy": 0.6875,
+    "model_f1": 0.4726,
+    "improvement_accuracy": -0.1225,
+    "improvement_f1": 0.4726
+  },
+  "model_version": "1.0.0",
+  "notes": "Decision Tree trained with GridSearchCV hyperparameter tuning. Predictions are estimates for educational purposes only."
+}

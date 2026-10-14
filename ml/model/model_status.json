@@ -1,0 +1,20 @@
+{
+  "trained": true,
+  "model_path": "model/decision_tree_model.joblib",
+  "scaler_path": "model/scaler.joblib",
+  "training_timestamp": "2026-10-13T23:36:26.633142",
+  "model_version": "1.0.0",
+  "feature_columns": [
+    "Age",
+    "Monthly_Income",
+    "Credit_Score",
+    "Employment_Years",
+    "Loan_Amount",
+    "Loan_Tenure_Months",
+    "Existing_Loans",
+    "Existing_EMI",
+    "Monthly_Expenses",
+    "Previous_Defaults"
+  ],
+  "target_column": "Loan_Approved"
+}

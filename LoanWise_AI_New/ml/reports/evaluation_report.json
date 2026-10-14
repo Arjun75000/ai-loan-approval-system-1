@@ -1,0 +1,141 @@
+{
+  "summary": {
+    "model_type": "DecisionTreeClassifier",
+    "training_timestamp": "2026-10-13T23:36:26.633142",
+    "dataset_rows": 2000,
+    "model_version": "1.0.0"
+  },
+  "metrics": {
+    "accuracy": 0.6875,
+    "precision": 0.3478,
+    "recall": 0.7368,
+    "f1_score": 0.4726,
+    "roc_auc": 0.7621,
+    "confusion_matrix": [
+      [
+        219,
+        105
+      ],
+      [
+        20,
+        56
+      ]
+    ]
+  },
+  "cross_validation": {
+    "n_folds": 5,
+    "mean_f1": 0.4276,
+    "std_f1": 0.0206,
+    "fold_scores": [
+      0.4149,
+      0.4677,
+      0.4135,
+      0.4271,
+      0.4149
+    ]
+  },
+  "baseline_comparison": {
+    "baseline_strategy": "most_frequent",
+    "baseline_accuracy": 0.81,
+    "baseline_f1": 0.0,
+    "model_accuracy": 0.6875,
+    "model_f1": 0.4726,
+    "improvement_accuracy": -0.1225,
+    "improvement_f1": 0.4726
+  },
+  "classification_report": {
+    "0": {
+      "precision": 0.9163179916317992,
+      "recall": 0.6759259259259259,
+      "f1-score": 0.7779751332149201,
+      "support": 324.0
+    },
+    "1": {
+      "precision": 0.34782608695652173,
+      "recall": 0.7368421052631579,
+      "f1-score": 0.47257383966244726,
+      "support": 76.0
+    },
+    "macro avg": {
+      "precision": 0.6320720392941604,
+      "recall": 0.7063840155945419,
+      "f1-score": 0.6252744864386837,
+      "support": 400.0
+    },
+    "weighted avg": {
+      "precision": 0.8083045297434964,
+      "recall": 0.6875,
+      "f1-score": 0.7199488874399503,
+      "support": 400.0
+    }
+  },
+  "feature_importance": [
+    {
+      "feature": "Credit_Score",
+      "importance": 0.256469
+    },
+    {
+      "feature": "Existing_Loans",
+      "importance": 0.183193
+    },
+    {
+      "feature": "Loan_Amount",
+      "importance": 0.137319
+    },
+    {
+      "feature": "Previous_Defaults",
+      "importance": 0.103897
+    },
+    {
+      "feature": "Existing_EMI",
+      "importance": 0.09343
+    },
+    {
+      "feature": "Age",
+      "importance": 0.091835
+    },
+    {
+      "feature": "Employment_Years",
+      "importance": 0.077148
+    },
+    {
+      "feature": "Monthly_Income",
+      "importance": 0.038114
+    },
+    {
+      "feature": "Monthly_Expenses",
+      "importance": 0.010872
+    },
+    {
+      "feature": "Loan_Tenure_Months",
+      "importance": 0.007722
+    }
+  ],
+  "class_distribution": {
+    "total": {
+      "0": 1618,
+      "1": 382
+    },
+    "train": {
+      "0": 1294,
+      "1": 306
+    },
+    "test": {
+      "0": 324,
+      "1": 76
+    }
+  },
+  "parameters": {
+    "class_weight": "balanced",
+    "criterion": "entropy",
+    "max_depth": "7",
+    "min_samples_leaf": "10",
+    "min_samples_split": "2"
+  },
+  "limitations": [
+    "This model is trained on a limited dataset and may not generalize to real-world scenarios.",
+    "Predictions are estimates and should not be treated as actual bank decisions.",
+    "Feature importance indicates correlation in this dataset, not real-world causation.",
+    "The model's probability estimates may not be well-calibrated for small or imbalanced datasets."
+  ]
+}
