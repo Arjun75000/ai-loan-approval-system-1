@@ -12,8 +12,7 @@ if (fs.existsSync(rootEnv)) {
   dotenv.config({ path: rootEnv });
 }
 
-const defaultPythonPath = "C:\\Users\\91750\\AppData\\Local\\Programs\\Python\\Python312\\python.exe";
-const resolvedPython = process.env.PYTHON_PATH || (fs.existsSync(defaultPythonPath) ? defaultPythonPath : "python");
+const resolvedPython = process.env.PYTHON_PATH || "python3";
 
 const candidateMl1 = path.join(__dirname, "..", "..", "..", "ml");
 const candidateMl2 = path.join(__dirname, "..", "..", "ml");
