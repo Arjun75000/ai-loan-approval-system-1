@@ -1,4 +1,5 @@
-const API_BASE = "http://localhost:5000/api";
+const API_BASE = import.meta.env.VITE_API_URL ||
+  "https://ai-loan-approval-system-mj6p.onrender.com/api";
 
 const request = async (endpoint, options = {}) => {
   const url = `${API_BASE}${endpoint}`;
